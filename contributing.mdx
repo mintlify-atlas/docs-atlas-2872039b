@@ -1,0 +1,98 @@
+---
+title: "Contributing"
+description: "How to contribute to Catppuccin — ports, documentation, tooling, and more."
+---
+
+Catppuccin welcomes contributions of all kinds. Whether you're submitting a new port, improving documentation, or enhancing tooling, your involvement helps the project grow.
+
+## What you can contribute
+
+<CardGroup cols={2}>
+  <Card title="New ports" icon="paintbrush" href="/port-creation">
+    Bring Catppuccin to a new app, editor, or tool by following the port creation guide.
+  </Card>
+  <Card title="Documentation" icon="book" href="https://github.com/catppuccin/catppuccin">
+    Improve existing docs, fix inaccuracies, or clarify guidelines.
+  </Card>
+  <Card title="Tooling" icon="wrench" href="https://github.com/catppuccin/catppuccin">
+    Help maintain and improve the scripts, utilities, and CI infrastructure.
+  </Card>
+  <Card title="Discord community" icon="discord" href="https://discord.com/servers/catppuccin-907385605422448742">
+    Ask questions, get feedback on your work, and collaborate with maintainers.
+  </Card>
+</CardGroup>
+
+## Contribution workflow
+
+<Steps>
+  <Step title="Fork the repository">
+    Fork the relevant Catppuccin repository to your own GitHub account.
+  </Step>
+  <Step title="Create a topic branch">
+    Create a [topic branch](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows#_topic_branch) on your fork for your specific change. Do not work directly on `main`.
+  </Step>
+  <Step title="Make your changes">
+    Apply your changes. Use the `.editorconfig` file at the root of the project to maintain consistent coding styles across editors. See [EditorConfig's website](https://editorconfig.org/) for setup instructions.
+  </Step>
+  <Step title="Write your commit message">
+    Write a clear and explicit commit message. Following [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) is strongly recommended.
+
+    <Tip>
+      Conventional Commits give your history a consistent, machine-readable structure. Use prefixes like `feat:`, `fix:`, `docs:`, and `chore:` to make your intent clear.
+    </Tip>
+  </Step>
+  <Step title="Open a pull request">
+    Push your branch and open a pull request against the main repository. Describe what you changed and why.
+  </Step>
+</Steps>
+
+## Code style
+
+Use the `.editorconfig` file located at the root of the project to maintain consistent coding styles. This handles indentation, line endings, and other formatting details automatically in most editors.
+
+## Commit messages
+
+<Tip>
+  Consider following [conventionalcommits.org](https://www.conventionalcommits.org/en/v1.0.0/) rules for creating explicit and meaningful commit messages.
+</Tip>
+
+Conventional Commits format:
+
+```
+<type>[optional scope]: <description>
+
+[optional body]
+```
+
+Common types: `feat`, `fix`, `docs`, `chore`, `refactor`, `test`.
+
+## First-time contributors
+
+If this is your first time contributing to an open source project, the [first-contributions](https://github.com/firstcontributions/first-contributions) repository on GitHub is an excellent hands-on resource. It walks you through the GitHub workflow — forking, branching, committing, and opening a pull request — in a safe environment.
+
+Feel free to join the [Catppuccin Discord](https://discord.com/servers/catppuccin-907385605422448742) to ask questions and clarify your understanding. The community is happy to help.
+
+## Submitting a port
+
+If you want to bring Catppuccin to a new application, follow the [port creation guide](/port-creation). It covers the full workflow from setting up your repository to publishing your port.
+
+## Code of Conduct
+
+All contributors are expected to follow the [Catppuccin Code of Conduct](https://github.com/catppuccin/.github/blob/main/CODE_OF_CONDUCT.md). Please read it before participating.
+
+## Getting help
+
+<CardGroup cols={2}>
+  <Card title="Discord" icon="discord" href="https://discord.com/servers/catppuccin-907385605422448742">
+    Chat with the community and maintainers in real time.
+  </Card>
+  <Card title="GitHub Discussions" icon="github" href="https://github.com/catppuccin/catppuccin/discussions">
+    Ask questions and share ideas asynchronously.
+  </Card>
+  <Card title="Port creation guide" icon="paintbrush" href="/port-creation">
+    Everything you need to submit a new port.
+  </Card>
+  <Card title="Code of Conduct" icon="shield" href="https://github.com/catppuccin/.github/blob/main/CODE_OF_CONDUCT.md">
+    Community standards and expectations.
+  </Card>
+</CardGroup>

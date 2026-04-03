@@ -1,0 +1,101 @@
+---
+title: "Code editors"
+description: "Syntax highlighting assignments, editor chrome colors, rainbow bracket sequences, diff colors, and debugging colors for code editors."
+---
+
+<Warning>
+  This is still a work-in-progress. Additionally, different editors have different capabilities for theming — please use your own judgement in accordance with the main colors defined below.
+</Warning>
+
+## Language defaults
+
+These are the standard syntax token color assignments. Apply them as your baseline when building an editor theme.
+
+| Syntax | Color |
+| --- | --- |
+| Keyword | Mauve |
+| Strings | Green |
+| Symbols, Atoms | Red |
+| Escape sequences, Regex | Pink |
+| Comments | Overlay 2 |
+| Constants, Numbers | Peach |
+| Operators | Sky |
+| Braces, Delimiters | Overlay 2 |
+| Methods, Functions | Blue |
+| Parameters | Maroon |
+| Builtins | Red |
+| Classes, Interfaces, Annotations, Metadata, Enums, Types | Yellow |
+| Enum variants | Teal |
+| Property (e.g. JSON keys) | Blue |
+| Attributes (e.g. XML-style attributes) | Yellow |
+| Macros | Rosewater |
+
+## General editor colors
+
+| Element | Color |
+| --- | --- |
+| Cursor | Rosewater |
+| Cursor line | Text at **10% opacity** |
+| Line numbers | Overlay 1 |
+| Active line number | Lavender |
+| Normal links | Blue |
+| Followed links | Lavender |
+| On-hover links | Sky |
+| Search foreground | Text |
+| Search background | Teal |
+| Active search foreground | Text |
+| Active search background | Red |
+| Errors | Red |
+| Warnings | Yellow, Peach |
+| Information | Teal |
+
+## Rainbow highlights
+
+Used for bracket pairs, heading levels, and other depth-based colorization.
+
+### Brackets and headings
+
+| Level | Color |
+| --- | --- |
+| Color #1 | Red |
+| Color #2 | Peach |
+| Color #3 | Yellow |
+| Color #4 | Green |
+| Color #5 | Sapphire |
+| Color #6 | Lavender |
+
+### Parameters and local variables
+
+These use a 60% mix of Text with the corresponding accent color to keep them visually distinct but not overwhelming.
+
+| Level | Color |
+| --- | --- |
+| Color #1 | 60% Text / Red mix |
+| Color #2 | 60% Text / Yellow mix |
+| Color #3 | 60% Text / Green mix |
+| Color #4 | 60% Text / Teal mix |
+| Color #5 | 60% Text / Blue mix |
+| Color #6 | 60% Text / Mauve mix |
+
+## Diff and merge
+
+| Function | Color |
+| --- | --- |
+| Diff header | Blue |
+| Index metadata | Overlay 2 |
+| File path markers | Pink |
+| Hunk header | Peach |
+| Changed text background | Blue at **10%–20% opacity** |
+| Changed line background | Blue at **15%–25% opacity** |
+| Inserted text background | Green at **10%–20% opacity** |
+| Inserted line background | Green at **15%–25% opacity** |
+| Removed text background | Red at **10%–20% opacity** |
+| Removed line background | Red at **15%–25% opacity** |
+
+## Debugging
+
+| Function | Color |
+| --- | --- |
+| Breakpoint icon | Red |
+| Breakpoint line | Transparent |
+| Breakpoint line during execution | Yellow at **15% opacity** |

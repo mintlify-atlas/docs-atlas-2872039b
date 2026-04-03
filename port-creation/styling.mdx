@@ -1,0 +1,49 @@
+---
+title: "Styling"
+description: "Repository naming, README, and file conventions for Catppuccin ports."
+---
+
+After creating your repository, style it properly to ensure consistency across all ports in the organization.
+
+## Set up your repository
+
+<Steps>
+  <Step title="Name the repository">
+    Use the app's name in `lower-kebab-case`. For example, use `unreal-engine` instead of `Unreal Engine`.
+  </Step>
+  <Step title="Set the default branch to main">
+    Ensure the default branch is set to `main`. This keeps your repository consistent with other ports across the organization.
+  </Step>
+  <Step title="Add images under assets/">
+    Store all port screenshots and preview images in the `assets/` directory.
+
+    Prefer `.webp` over `.png` for images. `.webp` is a more efficient format and is supported by all major browsers.
+  </Step>
+  <Step title="Write the repository description">
+    Format the description as:
+
+    > `<emoji>` Soothing pastel theme for `<app name>`
+
+    - `<emoji>` should be an emoji that best represents the app.
+    - `<app name>` is the name of the app, capitalized properly.
+  </Step>
+  <Step title="Add repository topics">
+    Add `catppuccin`, `theme`, and the name of the application (e.g. `unreal-engine`) to the repository topics.
+  </Step>
+  <Step title="Update the README">
+    Follow these requirements for `README.md`:
+
+    - Update [shields.io](https://shields.io/) badges to point to your repository instead of the template repository.
+    - Use [catwalk](https://github.com/catppuccin/toolbox#-catwalk) to generate the main preview image — a layered screenshot combining all four flavors.
+    - Change preview image paths to use [relative links](https://github.blog/2013-01-31-relative-links-in-markup-files/).
+    - Add yourself to the **Thanks to** section.
+  </Step>
+  <Step title="Follow file conventions">
+    - Use uppercase names for meta files (e.g. `README.md`).
+    - Do not add health files such as `CODE_OF_CONDUCT.md` or `SUPPORT.md` — these are organization-wide files stored in [catppuccin/.github](https://github.com/catppuccin/.github).
+  </Step>
+</Steps>
+
+<Tip>
+  Use [catwalk](https://github.com/catppuccin/toolbox#-catwalk) to generate your main preview image. Catwalk creates a layered screenshot that combines all four Catppuccin flavors — Latte, Frappé, Macchiato, and Mocha — into a single image. See [vscode](https://github.com/catppuccin/vscode#catppuccin-for-vscode) and [discord](https://github.com/catppuccin/discord#catppuccin-for-discord) for examples.
+</Tip>

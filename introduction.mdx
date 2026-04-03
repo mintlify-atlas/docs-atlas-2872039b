@@ -1,0 +1,63 @@
+---
+title: Introduction
+description: Catppuccin is a community-driven pastel theme that aims to be the middle ground between low and high-contrast themes.
+---
+
+Catppuccin (/ˌkætpʊˈtʃiːn/) is a community-driven pastel theme that aims to be the middle ground between low and high-contrast themes. It consists of 4 soothing warm flavors with 26 eye-candy colors each, perfect for coding, designing, and much more.
+
+## Design philosophy
+
+Catppuccin is built on three guiding principles:
+
+- **Colorful is better than colorless** — the colorfulness of something contributes to the distinction amongst the parts of that something, making it marginally easier to understand how things are structured.
+- **There should be balance** — not too dull, not too bright. Suitability under various light conditions is a must.
+- **Harmony is superior to dissonance** — vivacious colors must complement each other.
+
+## Flavors
+
+Catppuccin comes in four flavors. Three are dark-background variants and one is light, giving you a full spectrum from bright to deep.
+
+<CardGroup cols={2}>
+  <Card title="Latte" icon="sun">
+    The light flavor. Built on a warm off-white base, Latte is the only light variant and is ideal for bright environments or users who prefer light themes.
+  </Card>
+  <Card title="Frappé" icon="cloud">
+    A soft dark flavor. Frappé sits at the lighter end of the dark variants, using muted blue-gray tones for a gentler contrast.
+  </Card>
+  <Card title="Macchiato" icon="moon">
+    A medium dark flavor. Macchiato deepens the palette further, striking a comfortable balance between readability and low-light comfort.
+  </Card>
+  <Card title="Mocha" icon="star">
+    The darkest flavor. Mocha uses deep navy-black tones and is the most popular choice for night-time or low-light use.
+  </Card>
+</CardGroup>
+
+<Note>
+  All four flavors share the same 26 color names. Only the hex values differ between flavors. This means a port only needs to be written once and can be adapted to any flavor by swapping the palette values.
+</Note>
+
+## Ports
+
+A **port** is an adaptation of the Catppuccin palette for a specific application, tool, or platform. Ports translate the 26 palette colors into whatever format the target app requires — whether that's a VS Code theme JSON file, a terminal color scheme, a CSS file, or a config snippet.
+
+Ports exist for hundreds of applications, including:
+
+- Code editors and IDEs (VS Code, Neovim, JetBrains, Emacs, Helix, Zed)
+- Terminals (kitty, Alacritty, WezTerm, iTerm2, Ghostty)
+- Browsers (Firefox, Chrome, Zen Browser)
+- Desktop environments and window managers (KDE, Hyprland, i3)
+- CLI tools (tmux, bat, fzf, Starship, lazygit)
+- Programming language libraries (Rust, Python, Go, Java, Flutter)
+
+<Tip>
+  Browse the full list of available ports in the [Ports](/ports/overview) section. For guidelines on how to use the palette in your own project, read the [style guide](/style-guide).
+</Tip>
+
+## Sub-palettes
+
+Every flavor is organized into two sub-palettes:
+
+- **Monochromatic** — different shades of purple-gray and pale lavender, used for UI components like backgrounds, borders, and surfaces.
+- **Analogous** — all the colors of the rainbow (Rosewater through Lavender), used for syntax highlighting and semantic color roles.
+
+This structure means ports can map colors semantically rather than by exact value, ensuring consistent theming across very different applications.

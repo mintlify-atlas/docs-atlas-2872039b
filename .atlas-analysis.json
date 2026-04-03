@@ -1,24 +1,11 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "name": "Catppuccin",
+  "projectType": "general",
+  "projectName": "Catppuccin",
+  "projectDescription": "A community-driven soothing pastel color palette available in 4 warm flavors with 26 eye-candy colors each, designed for theming apps, terminals, editors, and more.",
   "theme": "willow",
-  "colors": {
-    "primary": "#040404",
-    "light": "#86bdd7",
-    "dark": "#e2abab"
-  },
-  "favicon": "https://media.brand.dev/756df8e9-53a8-4d7a-a213-4d27757043fe.jpg",
-  "navbar": {
-    "primary": {
-      "type": "github",
-      "href": "https://github.com/catppuccin/catppuccin"
-    }
-  },
-  "footer": {
-    "socials": {
-      "github": "https://github.com/catppuccin/catppuccin"
-    }
-  },
+  "primaryColor": "#040404",
+  "lightColor": "#86bdd7",
+  "darkColor": "#e2abab",
   "navigation": {
     "tabs": [
       {
@@ -80,5 +67,25 @@
         ]
       }
     ]
-  }
+  },
+  "keyFeatures": [
+    "4 warm flavors: Latte (light), Frappé, Macchiato, and Mocha (dark)",
+    "26 carefully curated pastel colors per flavor",
+    "Ports for 300+ apps across editors, terminals, browsers, desktop environments, and more",
+    "Language libraries for TypeScript, Python, Rust, Go, Lua, and more",
+    "Comprehensive style guide for consistent port creation",
+    "Community-driven with open port submission and review process",
+    "Userstyles for website theming via Stylus"
+  ],
+  "publicApiSurface": [
+    "Latte flavor (light theme) - 26 colors",
+    "Frappé flavor (dark theme) - 26 colors",
+    "Macchiato flavor (dark theme) - 26 colors",
+    "Mocha flavor (darkest theme) - 26 colors",
+    "ports.yml - machine-readable port registry",
+    "ports.porcelain.json - generated port index with metadata",
+    "categories.yml - port category definitions",
+    "@catppuccin/palette npm package",
+    "catppuccin/template - port template repository"
+  ]
 }

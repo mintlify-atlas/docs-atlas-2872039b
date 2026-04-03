@@ -1,0 +1,135 @@
+---
+title: "Terminals"
+description: "Window colors and ANSI color mappings for all four Catppuccin flavors: Latte, Frappé, Macchiato, and Mocha."
+---
+
+## Window colors
+
+These colors apply to terminal chrome elements such as the cursor, borders, and bell indicators. The values are consistent across all flavors, with one exception for Cursor Text.
+
+| Element | Latte | Frappé | Macchiato | Mocha |
+| --- | --- | --- | --- | --- |
+| Cursor | Rosewater | Rosewater | Rosewater | Rosewater |
+| Cursor Text | Base | Crust | Crust | Crust |
+| Active Border | Lavender | Lavender | Lavender | Lavender |
+| Inactive Border | Overlay 0 | Overlay 0 | Overlay 0 | Overlay 0 |
+| Bell Border | Yellow | Yellow | Yellow | Yellow |
+
+## ANSI color mappings
+
+<Tabs>
+  <Tab title="Latte">
+    ### Regular colors (color0–color7)
+
+    | Code | ANSI name | Palette color |
+    | --- | --- | --- |
+    | color0 | black | Subtext 1 |
+    | color1 | red | Red |
+    | color2 | green | Green |
+    | color3 | yellow | Yellow |
+    | color4 | blue | Blue |
+    | color5 | magenta | Pink |
+    | color6 | cyan | Teal |
+    | color7 | white | Surface 2 |
+
+    ### Bold colors (color8–color15)
+
+    | Code | ANSI name | Palette color |
+    | --- | --- | --- |
+    | color8 | bright black | Subtext 0 |
+    | color9 | bright red | Bright Red |
+    | color10 | bright green | Bright Green |
+    | color11 | bright yellow | Bright Yellow |
+    | color12 | bright blue | Bright Blue |
+    | color13 | bright magenta | Bright Pink |
+    | color14 | bright cyan | Bright Teal |
+    | color15 | bright white | Surface 1 |
+
+    ### Extended colors (color16–color17)
+
+    | Code | Palette color |
+    | --- | --- |
+    | color16 | Peach |
+    | color17 | Rosewater |
+  </Tab>
+  <Tab title="Frappé / Macchiato / Mocha">
+    ### Regular colors (color0–color7)
+
+    | Code | ANSI name | Palette color |
+    | --- | --- | --- |
+    | color0 | black | Surface 1 |
+    | color1 | red | Red |
+    | color2 | green | Green |
+    | color3 | yellow | Yellow |
+    | color4 | blue | Blue |
+    | color5 | magenta | Pink |
+    | color6 | cyan | Teal |
+    | color7 | white | Subtext 0 |
+
+    ### Bold colors (color8–color15)
+
+    | Code | ANSI name | Palette color |
+    | --- | --- | --- |
+    | color8 | bright black | Surface 2 |
+    | color9 | bright red | Bright Red |
+    | color10 | bright green | Bright Green |
+    | color11 | bright yellow | Bright Yellow |
+    | color12 | bright blue | Bright Blue |
+    | color13 | bright magenta | Bright Pink |
+    | color14 | bright cyan | Bright Teal |
+    | color15 | bright white | Subtext 1 |
+
+    ### Extended colors (color16–color17)
+
+    | Code | Palette color |
+    | --- | --- |
+    | color16 | Peach |
+    | color17 | Rosewater |
+  </Tab>
+</Tabs>
+
+## ANSI color generation
+
+<Note>
+  These bright colors are not necessarily "brighter" than the normal colors, but rather more bold and saturated.
+</Note>
+
+The ANSI bright variants for all colors except `black` and `white` are automatically generated using the following formulas:
+
+<Tabs>
+  <Tab title="Mocha / Macchiato / Frappé">
+    ```
+    color.lightness * 0.94
+    color.chroma + 8
+    color.hue + 2
+    ```
+  </Tab>
+  <Tab title="Latte">
+    ```
+    color.lightness * 1.09
+    color.hue + 2
+    ```
+  </Tab>
+</Tabs>
+
+The `black` and `white` slots are not generated — they are mapped directly to palette colors:
+
+| Slot | Mocha / Macchiato / Frappé | Latte |
+| --- | --- | --- |
+| Black (color0) | Surface 1 | Subtext 1 |
+| Black (color8) | Surface 2 | Subtext 0 |
+| White (color7) | Subtext 0 | Surface 2 |
+| White (color15) | Subtext 1 | Surface 1 |
+
+## Syntax colors
+
+These colors apply to terminal mark/highlight features (e.g. kitty's `mark` functionality).
+
+| Element | Latte | Frappé | Macchiato | Mocha |
+| --- | --- | --- | --- | --- |
+| Mark 1 | Lavender | Lavender | Lavender | Lavender |
+| Mark 1 Text | Base | Crust | Crust | Crust |
+| Mark 2 | Mauve | Mauve | Mauve | Mauve |
+| Mark 2 Text | Base | Crust | Crust | Crust |
+| Mark 3 | Sapphire | Sapphire | Sapphire | Sapphire |
+| Mark 3 Text | Base | Crust | Crust | Crust |
